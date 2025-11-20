@@ -1,9 +1,11 @@
 MONGODB_HOST: mongodb-{{ env }}.daws86s.icu #mongodb-dev.daws86s.icu
 REDIS_HOST: redis-{{ env }}.daws86s.icu
-CATALOGUE_HOST: catalogue-{{ env }}.daws86s.icu
-CART_HOST: cart-{{ env }}.daws86s.icu
-USER_HOST: user-{{ env }}.daws86s.icu
 RABBITMQ_HOST: rabbitmq-{{ env }}.daws86s.icu
 MYSQL_HOST: mysql-{{ env }}.daws86s.icu
-SHIPPING_HOST: shipping-{{ env }}.daws86s.icu
-PAYMENT_HOST: payment-{{ env }}.daws86s.icu
+CATALOGUE_HOST: catalogue.backend-alb-{{ env }}.daws86s.icu   # catalogue.backend-alb-dev.daws86s.icu
+CART_HOST: cart.backend-alb-{{ env }}.daws86s.icu
+USER_HOST: user.backend-alb-{{ env }}.daws86s.icu
+SHIPPING_HOST: shipping.backend-alb-{{ env }}.daws86s.icu
+PAYMENT_HOST: payment.backend-alb-{{ env }}.daws86s.icu
+
+
