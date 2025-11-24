@@ -1,4 +1,3 @@
-
 - name: install mysql server
   ansible.builtin.package:
     name: mysql-server
@@ -17,7 +16,6 @@
   loop:
   - botocore
   - boto3
-
 
 - name: setup root password
   ansible.builtin.command: mysql_secure_installation --set-root-pass {{ MYSQL_ROOT_PASSWORD }}

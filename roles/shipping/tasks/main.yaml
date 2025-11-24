@@ -34,4 +34,3 @@
     name: common
     tasks_from: system-setup.yaml
 
-
