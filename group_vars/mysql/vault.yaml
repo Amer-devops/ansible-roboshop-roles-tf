@@ -1,7 +1,0 @@
-- name: Import schema
-  mysql_db:
-    state: import
-    name: all
-    target: /app/db/schema.sql
-    login_user: root
-    login_password: "{{ MYSQL_ROOT_PASSWORD }}"
